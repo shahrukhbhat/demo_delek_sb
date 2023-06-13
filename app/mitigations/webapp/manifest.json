@@ -15,6 +15,18 @@
       "version": "1.10.0",
       "toolsId": "738cca2c-d991-48a7-bd35-d946dcc1cb7b"
     },
+    "crossNavigation": {
+      "inbounds": {
+        "Mitigations-display": {
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          },
+          "semanticObject": "Mitigations",
+          "action": "display"
+        }
+      }
+    },
     "dataSources": {
       "mainService": {
         "uri": "/service/risk/",
@@ -142,5 +154,9 @@
       "async": true,
       "id": "app"
     }
+  },
+  "sap.cloud": {
+    "public": true,
+    "service": "demo_delek_sb.service"
   }
 }
