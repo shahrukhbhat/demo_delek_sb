@@ -51,3 +51,12 @@ resources:
       config:
         xsappname: demo_delek_sb-${space}
         tenant-mode: dedicated
+        role-collections:
+         - name: 'RiskManagersb-${space}'
+           description: Manage Risks
+           role-template-references:
+             - $XSAPPNAME.RiskManager
+         - name: 'RiskViewersb-${space}'
+           description: View Risks
+           role-template-references:
+             - $XSAPPNAME.RiskViewer
